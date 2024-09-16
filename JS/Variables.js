@@ -30,7 +30,7 @@ console.log(x==y)
 var x = 2
 var y = 2
 
-console.log(x===y)
+console.log("=== "+ x===y)
 
 var x = 2
 var y = "2"
@@ -41,3 +41,7 @@ var x = "2"
 var y = 2
 
 console.log(x==y)
+
+
+console.log("Object.is(1,1) " + Object.is(1,1));
+console.log(Object.is(x,y));
