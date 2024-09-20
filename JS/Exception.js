@@ -35,3 +35,11 @@ catch(err) {
   console.log(err);
   
 }
+
+
+let w = 10;
+function myFunc() {
+  let w = 20;
+  console.log(w);
+}
+myFunc();
