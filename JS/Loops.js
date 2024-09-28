@@ -19,12 +19,9 @@ console.log("For in");
 {
     const person = {fname:"John", lname:"Doe", age:25};
     
-    let text = "";
     for (let x in person) {
-        console.log(person[x]);
-        text += person[x] +" ";
+        console.log(`${x}: ${person[x]}`);
     }
-    console.log(text);
     console.log(person["fname"])
     console.log(person[0])
 }
@@ -32,16 +29,9 @@ console.log("For in");
 //For Each
 console.log("For Each");
 const numbers = [45, 4, 9, 16, 25];
+console.log(numbers);
+numbers.forEach(value => console.log(value*2));
 
-let txt = "";
-numbers.forEach(myFunction);
-
-function myFunction(value, index, array) {
-  txt += value + " ";
-  console.log(typeof value, value);
-  
-}
-console.log(typeof txt, txt);
 
 
 //While
