@@ -20,7 +20,8 @@ myFunction(6);
 
 let num = 1;
 try {
-  num.toUpperCase();
+  upper = num.toUpperCase();
+  console.log(upper);
 }
 catch(err) {
   console.log(err);
@@ -28,8 +29,11 @@ catch(err) {
 
 
 let x = 5;
+//let y = 3
 try {
+  console.log(x);  
   x = y + 1;   // y cannot be used (referenced)
+  console.log(x);
 }
 catch(err) {
   console.log(err);
@@ -37,9 +41,15 @@ catch(err) {
 }
 
 
-let w = 10;
-function myFunc() {
-  let w = 20;
-  console.log(w);
+let final = "ASFAsfa";
+try {
+  upper = final.toUpperCase();
+  console.log(upper);
 }
-myFunc();
+catch(err) {
+  console.log(err);
+}
+finally {
+  console.log("This run regardless the err");
+  
+}

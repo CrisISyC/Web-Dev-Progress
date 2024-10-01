@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Capturing</title>
+</head>
+<body>
+
+<div id="outer">
+  <p id="inner">
+    <button id="btn">Click me</button>
+  </p>
+</div>
+
+<script>
+  document.getElementById('btn').addEventListener('click', function() {
+    console.log('Button clicked!');
+  });
+
+  document.getElementById('inner').addEventListener('click', function() {
+    console.log('Paragraph clicked!');
+  }, true);  // Enable capturing
+
+  document.getElementById('outer').addEventListener('click', function() {
+    console.log('Div clicked!');
+  }, true);  // Enable capturing
+</script>
+
+</body>
+</html>
