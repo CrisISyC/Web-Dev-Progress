@@ -27,8 +27,12 @@ function getData() {
     })
 }
 
-getData()
-  .then((response) => console.log(response))
-  .catch((err) => alert(err.message))
-   
-  
+
+async function fetchingData() {
+    const books = await getData();
+    console.log(books);
+}
+
+
+fetchingData()
+
