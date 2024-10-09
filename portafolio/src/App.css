@@ -16,16 +16,22 @@ h1 {
   font-weight: 700;
   line-height: 1.1;
   margin: 40px 0;
+  text-align: center;
 }
 
 .App {
   min-height: 100vh;
   display: flex;
-  /*flex-wrap: wrap;*/
-  /*align-items: center;
+  flex-direction: column; /* Alinea verticalmente el título y las películas */
+  align-items: center;
+  padding: 20px;
+}
+
+.div-peliculas {
+  display: flex;
+  flex-wrap: wrap; /* Hace que las películas se ajusten en múltiples filas si es necesario */
   justify-content: center;
-  text-align: center;*/
-  flex-direction: row;
+  gap: 20px; /* Espacio entre las tarjetas de películas */
 }
 
 .contenedor-principal {
