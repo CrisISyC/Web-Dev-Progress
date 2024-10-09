@@ -1,0 +1,31 @@
+/* Footer.css */
+.footer {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    padding: 20px; /* Espaciado interno */
+    position: relative; /* Posicionamiento relativo */
+    bottom: 0; /* Alinear al fondo */
+    width: 100%; /* Ocupa todo el ancho */
+  }
+  
+  .footer-content {
+    max-width: 1200px; /* Limitar el ancho del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+  }
+  
+  html, body {
+    height: 100%; /* Asegurar que el html y body ocupen el 100% */
+    margin: 0; /* Eliminar márgenes */
+  }
+  
+  .App {
+    display: flex; /* Usar flexbox para el layout */
+    flex-direction: column; /* Apilar elementos verticalmente */
+    min-height: 100vh; /* Hacer que la App ocupe al menos la altura de la ventana */
+  }
+  
+  .content {
+    flex: 1; /* Hacer que el contenido crezca para llenar el espacio */
+  }
+  

@@ -1,6 +1,9 @@
 //import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 import Peliculas from './componentes/Peliculas'
+import Footer from './componentes/Footer'
+
 
 function App() {
   return (
@@ -31,6 +34,7 @@ function App() {
                     de Marvel, pero en su lugar recluta a una variante de Lobezno para salvar su universo de la extinción.'
         />
       </div>    
+      <Footer />
     </div>
   );
 }
