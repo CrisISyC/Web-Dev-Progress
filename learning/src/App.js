@@ -6,6 +6,15 @@ import Footer from './componentes/Footer'
 
 
 function App() {
+
+  const manejarClick  = () => {
+    console.log('Click')
+  }
+
+  const reiniciarContador = () => {
+    console.log('Reiniciar')
+  }
+  
   return (
     <div className="App">
       <h1>Peliculas Melas</h1>
@@ -33,7 +42,11 @@ function App() {
           sinopsis='La Autoridad de Variación Temporal (AVT) ofrece a Deadpool un lugar en el Universo cinematográfico 
                     de Marvel, pero en su lugar recluta a una variante de Lobezno para salvar su universo de la extinción.'
         />
-      </div>    
+      </div> 
+      <div className='contador-principal'>
+
+      </div>
+
       <Footer />
     </div>
   );
