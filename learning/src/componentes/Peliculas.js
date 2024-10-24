@@ -7,7 +7,7 @@ function Peliculas(props){
       <div className='contenedor-pelicula'>
         <img  className='image-pelicula' 
         src={props.poster}
-        alt='Portada de la pelicula' onClick={Contador(props.boton)}/>
+        alt='Portada de la pelicula' />
         <div className='contenedor-texto-pelicula'>
           <p className='nombre-pelicula'> {props.pelicula}</p>
           <p className='director-pelicula'>{props.director}</p>
