@@ -1,16 +1,19 @@
 import './App.css';
 import logoApp from './imagenes/codeblack_logo.png';
-import Button from './components/Boton';
+import Button from './components/Button';
+import Counter from './components/Counter';
+import { useState } from 'react';
 
 function App() {
 
+  const [clicNumber, setClicNumber] = useState(0);
+
   const manejoClic = () => {
-    console.log("Clic");
+    setClicNumber(clicNumber + 50);
   }
 
   const reiniciarContador = () =>{
-    console.log("Reiniciar");
-    
+    setClicNumber(0);
   }
 
   return (
@@ -22,14 +25,16 @@ function App() {
           alt='logo de la app'/>
       </div>  
       <div className='contenedor-principal'>
+        <Counter
+          clicNumber={clicNumber}/>
         <Button
-          text="Clic"
+          text='Clic'
           esBotonClic={true}
-          manejoClic={manejoClic()}/>
+          manejoClic={manejoClic}/>
         <Button
-          text="Reiniciar"
+          text='Reiniciar'
           esBotonClic={false}
-          manejoClic={reiniciarContador()}/>
+          manejoClic={reiniciarContador}/>
       </div>
     </div>
   );

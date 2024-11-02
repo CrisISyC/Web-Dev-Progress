@@ -1,5 +1,5 @@
 import React from "react";
-import '../stylesheets/Boton.css'
+import '../stylesheets/Button.css'
 
 
 function Button({ text, esBotonClic, manejoClic }) {
