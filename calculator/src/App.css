@@ -17,7 +17,7 @@ html, body{
   font-family: Lato, sans-serif;
 }
 
-.logoAplicacion-contenedor{
+.logoAplicacion-container{
   width: 100%;
   display: flex;
   align-items: center;
@@ -26,6 +26,23 @@ html, body{
 }
 
 .logoApp-logo{
-  height: 250px;
+  height: 150px;
   border: 1px solid white;
+}
+
+
+.container-calculator{
+  width: 400px;
+  height: 600px;
+  padding: 14px;
+  background-color: #99c9ff;
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.row{
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
