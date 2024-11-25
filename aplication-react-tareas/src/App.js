@@ -1,6 +1,8 @@
 import './App.css';
 import logoApp from './images/codeblack_logo.png';
 import Task from './components/Task';
+import FormTask from './components/FormTask';
+import ListTask from './components/ListTask';
 
 
 function App() {
@@ -14,7 +16,7 @@ function App() {
       </div>  
       <div className='principalList'>
         <h1> Mis Tareas</h1>
-        <Task text='Learn React'/>
+        <ListTask />
       </div>
     </div>
   );
