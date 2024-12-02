@@ -1,0 +1,9 @@
+.principal{
+    color: white;
+    font-size: 25px;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    margin: 20px 0;
+    border: 1px solid red;
+    cursor: pointer;
+}

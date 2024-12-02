@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import UseStateHook from './components/UseStateHook';
 
 function App() {
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id="Interno1">
+        1
+      </div>
+      <div id="Interno2">
+        2
+      </div>
+      <div id="Interno3">
+        3
+      </div>
+      <div id="Interno4">
+        4
+      </div>
+      <div id="Interno5">
+        <UseStateHook 
+          valueInput ="Suave que estoy aprendiendo"/>
+      </div>
+      <div id="Interno6">
+        6
+      </div>
     </div>
   );
 }
