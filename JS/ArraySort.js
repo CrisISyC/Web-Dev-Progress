@@ -1,5 +1,6 @@
 const points = [40, 100, 1, 5, 25, 10];
 
+//Como son string es necesario pasarle la funcion de comparación
 points.sort();
 console.log(points);
 
