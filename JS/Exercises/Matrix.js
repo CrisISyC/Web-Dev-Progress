@@ -14,12 +14,49 @@ function draw_spiral_matrix(n){
 
     let matriz = [];
     let contador = 1;
-    let reversa = 1;
+    let fila = 0
+    let filaVuelta = n-1
+    let columna = n-1 
+    let columnaVuelta = 0
+    let ciclo = true;
     
     for (let i = 0; i < n; i++) {
+      matriz[i] = []
+    }
+
+    while (ciclo){
+
+      for (let i = columnaVuelta; i <= columna; i++){
+        matriz[fila][i] = contador++
       }
-    
-    console.log(matriz); 
+      fila +=1
+
+
+      for (let i = fila; i <= filaVuelta; i++){
+        matriz[i][columna] = contador++
+      }
+      columna-=1
+
+
+      for (let i = columna; i >= columnaVuelta; i--){
+        matriz[filaVuelta][i] = contador++
+      }
+      filaVuelta-=1
+
+      for (let i = filaVuelta; i >= fila; i--){
+        matriz[i][columnaVuelta] = contador ++
+      }
+      columnaVuelta+=1
+
+      
+      if(contador==(n*n)+1){
+        ciclo = false
+      }
+
+
+    }
+
+    console.log(matriz.map(row => row.join(' ')).join('\n'));
 }
 
 
