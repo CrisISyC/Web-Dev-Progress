@@ -6,12 +6,40 @@ for(let i = 0; i < 3; i++){
     
 }
 
-//For of 
-console.log("For of");
-const cars = ["BMW", "Volvo", "Mini"];
 
-for (let x of cars) {
-  console.log(x);
+
+const inventory = [
+    { name: 'doll', quantity: 5, category: 'toys' },
+    { name: 'car', quantity: 3, category: 'toys' },
+    { name: 'ball', quantity: 2, category: 'sports' },
+    { name: 'car', quantity: 2, category: 'toys' },
+    { name: 'racket', quantity: 4, category: 'sports' }
+  ]
+
+{
+    console.log("for of inventory")
+    for ( let x of inventory){
+
+        console.log(x.name)
+    }
+
+    console.log("for in inventory")
+    for ( let y in inventory){
+
+        console.log(inventory[y].name)
+    }
+}
+
+
+//For of 
+
+{
+    console.log("For of");
+    const cars = ["BMW", "Volvo", "Mini"];
+
+    for (let x of cars) {
+    console.log(x);
+    }
 }
 
 //For in 
