@@ -4,7 +4,7 @@ function fixPackages(packages){
     let counter2 = [];
     let result = packages.split("")
 
-    for(x of result){
+    for(let x of result){
         
         if(x === "("){
             counter1.push(counter)
@@ -30,10 +30,10 @@ function fixPackages(packages){
             let aux = ''
             let aux2 = ''
             
-            if ( result[counterR] == undefined){
+            while(result[counterR] == undefined){
                 counterR--
             }
-            if (result[counterL] == undefined){
+            while(result[counterL] == undefined){
                 counterL++
             }
 
@@ -55,6 +55,6 @@ function fixPackages(packages){
     return result.join("")
 }
 
-console.log(fixPackages('a(b(c(d)))e'))
-// ➞ "acbe"
+console.log(fixPackages('a(b(c(de)))e'))
+// ➞ "'acedbe'
 // Volteamos "cb" dentro de los paréntesis
