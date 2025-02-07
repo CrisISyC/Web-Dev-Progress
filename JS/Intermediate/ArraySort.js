@@ -1,8 +1,8 @@
 const points = [40, 100, 1, 5, 25, 10];
 
-//Como son string es necesario pasarle la funcion de comparación
+//We need pass the sorted functions
 points.sort();
-console.log(points);
+console.log(points);   // [1,10,100,25,40,5]
 
 
 //The compare function should return a negative, zero, or positive value, depending on the arguments:
@@ -11,13 +11,21 @@ console.log(points);
 points.sort(function(a, b){
     return a - b
     });
-console.log(points);
+console.log(points);   //[1,5,10,25,40,100]
+
+//with arrowFunction
+points.sort((a,b)=> a-b)
+console.log(points)    //[1,5,10,25,40,100]
 
 // Descending
 points.sort(function(a, b){
     return b - a
     });
-console.log(points);
+console.log(points);   //[100,40,25,10,5,1]
+
+//arrowFunction
+points.sort((a,b)=> b-a)
+console.log(points);   //[100,40,25,10,5,1]
 
 
 console.log(Math.max.apply(null, points));

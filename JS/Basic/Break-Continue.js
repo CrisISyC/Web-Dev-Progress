@@ -2,7 +2,7 @@ let text = "";
 for (let i = 0; i < 10; i++) {
   if (i === 3) { break; }
   text += "The number is " + i ;
-  console.log(text);
+  console.log(text);        //0,1,2
   text = ""
 }
 
@@ -10,7 +10,7 @@ for (let i = 0; i < 10; i++) {
 for (let i = 0; i < 10; i++) {
   if (i === 3) { continue; }
   text += "The number is " + i ;
-  console.log(text);
+  console.log(text);        //0,1,2,3,4,5,6,7,8,9
   text = ""
 }
 
