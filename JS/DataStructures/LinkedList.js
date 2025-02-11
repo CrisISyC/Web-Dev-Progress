@@ -41,22 +41,35 @@ class LinkedList{
 
     if(this.size===0){
       console.log("List Empty")
+    }else if(current.data == element){
+
+      this.head = current.next
+      this.size--
     }else{
 
       while(current.next){
 
         if(current.next.data == element){
 
-          
-          
-
+            current.next = current.next.next
+            this.size--
+            return current.data
         }
 
+        current = current.next
+
       }
+
+      return console.log("Node not Found")
     }
 
 
   }
+
+  reverse(){
+
+  }
+
   printLinkedList(){
 
     let current = this.head;
@@ -107,11 +120,14 @@ let linkedList = new LinkedList();
 linkedList.add(12)
 linkedList.add(10)
 linkedList.add(2)
-
+linkedList.add(3)
+//linkedList.printLinkedList() 
+linkedList.remove(10)
+linkedList.remove(3)
+//linkedList.remove(12)
 //linkedList.printLinkedList()
 
-linkedList.add(3)
+console.log("Size is " + linkedList.size)
 
-//linkedList.printLinkedList()  
-
-linkedList.findLowestValue();
+//linkedList.findLowestValue();
+linkedList.printLinkedList()  
