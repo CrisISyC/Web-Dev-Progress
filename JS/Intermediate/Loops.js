@@ -1,5 +1,5 @@
 //For
-console.log("For");
+console.log("// ----------------- For -----------------//");
 
 for(let i = 0; i < 3; i++){
     console.log("For " + i);
@@ -34,7 +34,7 @@ const inventory = [
 //For of 
 
 {
-    console.log("For of");
+    console.log("// ----------------- For of ---------------//");
     const cars = ["BMW", "Volvo", "Mini"];
 
     for (let x of cars) {
@@ -43,7 +43,7 @@ const inventory = [
 }
 
 //For in 
-console.log("For in");
+console.log("// ----------------- For in ---------------//");
 {
     const person = {fname:"John", lname:"Doe", age:25};
     
@@ -55,7 +55,7 @@ console.log("For in");
 }
 
 //For Each
-console.log("For Each");
+console.log("// --------------- For Each ---------------//");
 const numbers = [45, 4, 9, 16, 25];
 console.log(numbers);
 numbers.forEach(value => console.log(value*2));
@@ -63,7 +63,7 @@ numbers.forEach(value => console.log(value*2));
 
 
 //While
-console.log("While");
+console.log("// ----------------- While ---------------//");
 var count = 0
 while(count < 3){
     console.log("While " + count)
@@ -71,7 +71,7 @@ while(count < 3){
 }
 
 //Do While
-console.log("Do While");
+console.log("// --------------- Do While ---------------//");
 let i = 0;
 do {
     

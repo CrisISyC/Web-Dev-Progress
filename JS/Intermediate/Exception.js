@@ -1,16 +1,16 @@
 function myFunction(x) { 
-    try { 
-      if(x == "")  throw "is Empty";
-      if(isNaN(x)) throw "not a number";
-      if(x > 10)   throw "too high";
-      if(x < 5)  throw "too low";
-    }
-    catch(err) {
-      console.log("Input "+ x + " " + err);      
-    }
+  try { 
+    if(x == "")  throw "is Empty";
+    if(isNaN(x)) throw "not a number";
+    if(x > 10)   throw "too high";
+    if(x < 5)    throw "too low";
   }
+  catch(err) {
+    console.log("Input "+ x + " " + err);      
+  }
+}
 
-
+  
 myFunction("");
 myFunction();
 myFunction(11);
@@ -30,8 +30,8 @@ catch(err) {
 
 let x = 5;
 //let y = 3
+
 try {
-  console.log(x);  
   x = y + 1;   // y cannot be used (referenced)
   console.log(x);
 }
@@ -41,7 +41,7 @@ catch(err) {
 }
 
 
-let final = "ASFAsfa";
+let final = 1;
 try {
   upper = final.toUpperCase();
   console.log(upper);
@@ -51,5 +51,4 @@ catch(err) {
 }
 finally {
   console.log("This run regardless the err");
-  
 }
