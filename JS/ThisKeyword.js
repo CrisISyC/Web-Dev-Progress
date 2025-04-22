@@ -31,7 +31,6 @@ const person2 = {
       return this.firstName + " " + this.lastName;
     }
   }
-  
 const member = {
     firstName:"Luis",
     lastName: "Beltran",

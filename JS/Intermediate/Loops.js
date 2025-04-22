@@ -19,13 +19,13 @@ const inventory = [
 {
     console.log("for of inventory")
     for ( let x of inventory){
-
+        console.log(x)
         console.log(x.name)
     }
 
     console.log("for in inventory")
     for ( let y in inventory){
-
+        console.log(y)
         console.log(inventory[y].name)
     }
 }
